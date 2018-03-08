@@ -1,5 +1,5 @@
 server:
-  port: 8090
+  port: 9000
 spring:
   application:
     name: eurekaServer
@@ -12,9 +12,9 @@ eureka:
 zuul: 
   prefix: /api
   routes:
-    studentservice:
-      path: /studentservice/**
-      url: http://localhost:8083
-    yahooapp:
-      path: /yahooapp/**
-      url: http://localhost:8082
+    EukeraServiceOne:
+      path: /EukeraServiceOne/**
+      url: http://localhost:9001
+    EukeraServiceTwo:
+      path: /EukeraServiceTwo/**
+      url: http://localhost:9002
