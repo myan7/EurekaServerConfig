@@ -13,8 +13,11 @@ zuul:
   prefix: /api
   routes:
     EukeraServiceOne:
-      path: /EukeraServiceOne/**
+      path: /ServicePatient/**
       url: http://localhost:9001
     EukeraServiceTwo:
-      path: /EukeraServiceTwo/**
+      path: /ServiceDoctor/**
       url: http://localhost:9002
+    EukeraServiceThree:
+      path: /ServiceAdmin/**
+      url: http://localhost:9003
